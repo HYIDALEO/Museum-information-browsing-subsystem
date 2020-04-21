@@ -1,0 +1,40 @@
+class MusemuItem(models.Model):
+    name = models.CharField(max_length=200)  # 名字
+    time = models.DateField()  # 开放时间
+    place = models.CharField(max_length=200)  # 博物馆地点
+    basicIntroduction = models.TextField(True)  # 基本介绍
+    mid = models.CharField(max_length=200)
+
+
+class ExhibitionItem(models.Model):
+    exhibitionName = models.CharField(max_length=200)  # 展览名称
+    exhibitionTime = models.DateField()  # 展览时间
+    exhibitionPlace = models.CharField(max_length=200)  # 展览地点
+    exhibitionIntroduction = models.TextField(True)  # 展览介绍
+    mid = models.CharField(max_length=200)
+
+
+class EducationItem(models.Model):
+    educationName = models.CharField(max_length=200)  # 教育活动名称
+    educationTime = models.DateField()  # 教育活动时间
+    educationIntroduction = models.TextField(True)  # 教育活动介绍
+    mid = models.CharField(max_length=200)
+
+class CollectionItem(models.Model):
+    collectionName = models.CharField(max_length=200)  # 经典藏品名称
+    collectionIntroduction = models.TextField(True)  # 经典藏品介绍
+    mid = models.CharField(max_length=200)
+
+
+class LearningItem(models.Model):
+    learningName = models.CharField(max_length=200)  # 学术活动名称 学术研究
+    learningIntroduction = models.TextField(True)  # 学术活动介绍
+    mid = models.CharField(max_length=200)
+
+
+class NEWS(models.Model):
+    news_title = models.CharField(max_length=200)
+    news_content = models.TextField(True)
+    news_time = models.DateField()
+    emtional = models.IntegerField(True)
+    mid = models.CharField(max_length=200)
