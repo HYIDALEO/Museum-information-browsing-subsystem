@@ -9,7 +9,7 @@
   "dependencies": {
     "eslint": "^4.19.1",
     "react": "16.3.1",
-    "react-native": "0.55.2",
+    "react-native": "0.70.2",
     "react-native-elements": "^0.19.1",
     "react-native-pwd-input": "^1.0.1",
     "react-native-swiper": "^1.5.13",
